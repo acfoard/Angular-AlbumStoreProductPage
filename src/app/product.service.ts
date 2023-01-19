@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@Angular/http';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/Operators'
+import 'rxjs/add/operator/map'
 
 @Injectable()
 export class ProductService {
