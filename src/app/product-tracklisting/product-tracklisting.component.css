@@ -1,4 +1,4 @@
-.trackListing {
+.tracklisting {
   font-size: 16px;
   padding-top: 10px;
 }
@@ -6,6 +6,10 @@
 li {
   display: block;
   line-height: 30px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 button {
