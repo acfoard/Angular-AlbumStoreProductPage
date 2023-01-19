@@ -7,7 +7,7 @@ import { Album } from './album';
 
 import { Observable } from 'rxjs/Observable';
 
-//import { Product } from './product';
+import { Product } from './product';
 
 @Injectable()
 export class ProductService {
@@ -21,7 +21,7 @@ export class ProductService {
     return this._http.get(this._albumUrl).map((response) => <Album>response.json());
   }
 
-  // getProducts(): Observable<Product[]> {
-  //   return this._http.get(this._productsUrl).map((response) => <Product[]>response.json());
-  // }
+  getProducts(): Observable<Product[]> {
+    return this._http.get(this._productsUrl).map((response) => <Product[]>response.json());
+  }
 }
